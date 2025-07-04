@@ -29,7 +29,7 @@ jobs:
             source /opt/ros/melodic/setup.bash
             mkdir -p /root/catkin_ws/src
             ln -s /root/pimouse_2025 /root/catkin_ws/src/pimouse_2025
-            ln -s /root/pimouse_2025 /root/catkin_ws/src/pimouse_run_2025
+            ln -s /root/pimouse_run_2025 /root/catkin_ws/src/pimouse_run_2025
             cd /root/catkin_ws
             rosdep install --from-paths src --ignore-src -r -y
             catkin_make
@@ -53,7 +53,7 @@ jobs:
           docker exec ros_ci_container bash -c "
             source /opt/ros/melodic/setup.bash
             source /root/catkin_ws/devel/setup.bash
-            xvfb-run -a rostest pimouse_2025 test.launch
+            xvfb-run -a rostest pimouse_run_2025 wall_stop.launch
           "
 
       - name: Cleanup
