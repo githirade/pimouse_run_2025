@@ -1,5 +1,5 @@
 <launch>
   <include file="$(find pimouse_2025)/launch/pimouse.launch" />
-  <node pkg="pimouse_run_2025" name"=wall_stop" type="wall_stop.py" required="true" />
+  <node pkg="pimouse_run_2025" name="wall_stop" type="wall_stop.py" required="true" />
   <test test-name="test_wall_stop" pkg="pimouse_run_2025" type="test_wall_stop.py" />
 </launch>
