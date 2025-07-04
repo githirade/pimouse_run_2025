@@ -8,11 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          path: pimouse_2025
+          path: pimouse_run_2025
       - uses: actions/checkout@v3
         with:
-##          repository: githirade/pimouse_run_2025
-          path: pimouse_run_2025
+          repository: githirade/pimouse_2025
+          path: pimouse_2025
       - name: Start container and mount both packages
         run: |
           docker run --name ros_ci_container -d \
