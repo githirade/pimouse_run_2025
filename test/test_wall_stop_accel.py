@@ -26,7 +26,7 @@ class WallStopTest(unittest.TestCase):
 
         rime.sleep(5.0)
         left, right = self.set_and_get(0,0,0,9) #total : 49
-        self.assertTrue(2000 < left == right "can't accerelate")
+        self.assertTrue(2000 < left == right, "can't accerelate")
 
         left, right = self.set_and_get(15,0,20,15) #total : 50
         self.assertTrue(left == right == 0, "cant'stop again")
