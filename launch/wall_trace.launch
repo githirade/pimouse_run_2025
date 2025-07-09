@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find pimouse_2025)/launch/pimouse.launch" />
+  <node pkg="pimouse_run_2025" name="wall_trace" type="wall_trace.py" required="true" />
+  <test test-name="test_wall_trace" pkg="pimouse_run_2025" type="test_wall_trace.py" />
+</launch>
