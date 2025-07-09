@@ -56,6 +56,7 @@ jobs:
             xvfb-run -a rostest pimouse_run_2025 wall_stop.launch
             xvfb-run -a rostest pimouse_run_2025 wall_stop_accel.launch
             xvfb-run -a rostest pimouse_run_2025 wall_trace.launch
+            xvfb-run -a rostest pimouse_run_2025 wall_around.launch
           "
 
       - name: Cleanup
