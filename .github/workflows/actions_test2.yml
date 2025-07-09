@@ -55,6 +55,7 @@ jobs:
             source /root/catkin_ws/devel/setup.bash
             xvfb-run -a rostest pimouse_run_2025 wall_stop.launch
             xvfb-run -a rostest pimouse_run_2025 wall_stop_accel.launch
+            xvfb-run -a rostest pimouse_run_2025 wall_trace.launch
           "
 
       - name: Cleanup
